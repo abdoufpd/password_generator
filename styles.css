@@ -1,0 +1,171 @@
+      
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps:wght@400&display=swap');
+
+*{
+    font-family: Delius Swash Caps ,serif , ;
+    font-weight: bold;
+    color :rgb(0,232,133);
+    outline: 0;
+}
+
+
+body{
+    background: #212121;
+    font-size:1.25rem;
+    font-family:'Consolas',Verdana,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    
+}
+#password{
+    background: #313131;
+    border:0px;
+    border-radius: 10px;
+    color: #808080;
+    text-align:center;
+    text-shadow: #202080 1px 1px;
+    font-family:'Inconsolata',monospace,'Consolas';
+    font-size: 1.25rem;
+    
+}
+#password , #copybtn{animation: password_animation 1s infinite;}
+@keyframes  password_animation {
+    0%{box-shadow:rgba(43, 255, 223, 0.3) 0 0 30px;}
+    50%{box-shadow:rgba(100, 255, 23, 0.3) 0 0 15px;}
+    100%{box-shadow:rgba(43, 255, 223, 0.3) 0 0 30px;}
+}
+
+#password:focus{
+    border-radius: 10px;
+    background:linear-gradient(to right,#212125,#404040,#212125);
+    border:0px;border-color: transparent;
+    font-family: 'Inconsolata',monospace;
+}
+#button{
+    background: transparent;
+    border: 0rem;
+    margin-top:10px;
+}
+h2{
+    font-family: Oleo Script,Arial, Helvetica, sans-serif;
+    
+    transition:2s;
+                        
+    
+}
+
+
+
+#hidebtn{
+    background-color: rgba(50, 50, 50, 0.2);
+    border:0px;
+    border-radius: 8px;
+    transition: all 0.5s;
+    box-shadow: #808030 0 0 10px;
+    color: antiquewhite;
+}
+#hidebtn:hover{
+    
+    background-color: rgba(50, 50, 50, 0.8);
+    box-shadow: #409090 0 0 20px;
+    color: antiquewhite;
+
+}
+#copybtn{
+    background-color: #313131;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+    border: 0px;
+    width: 25%;
+    font-size: 1rem;
+    height: auto;
+    align-items:none;
+    text-shadow: #202080 0 0 1px;
+    
+    
+}
+p{
+    font-family: 'Inconsolata','Consolas',verdana;
+    transition: 3s;
+    
+    text-align: start;margin-left: 25%;
+    
+}
+.I{
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+
+}
+input[type='button']{
+    width: auto;
+    font-size: 1rem;
+    height: auto;
+}
+img{
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    ruby-align: center;
+    position:absolute;
+    margin-left: 48.5%;
+    top: 0.5px;
+    transition: 1s;
+    animation: re 2s infinite;
+}
+.loader{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #212121c7;
+    backdrop-filter: blur(3px);
+    z-index: 20;
+    transition:all 1s;
+    
+    
+}
+.loader-bar{
+    width: 10px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background:linear-gradient(to top,#008080,#00ffff);
+    animation: loader-animation .8s infinite;
+}
+.loader-bar2{
+    width:10px;
+    height: 25px;
+    margin:0 5px;
+    
+    border-radius: 5px;
+    background:linear-gradient(to top,#008080,#00ffff);
+    animation: loader-animation2 .8s infinite;
+    
+}
+@keyframes loader-animation{
+    0%{transform: scale(1);}
+    50%{transform: scale(1,2);}
+    100%{transform: scale(1,1);}
+}
+@keyframes loader-animation2{
+    0%{transform: scale(1,2);}
+    50%{transform: scale(1,1);}
+    100%{transform: scale(1,2);}
+}
+
+@media only screen and (max-width:500px){
+    p{
+            margin-left: 0.01%;
+    }
+
+}
+.space{
+    margin-left: 1rem;
+}

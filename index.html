@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Password_Creator</title><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"><meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0'><link rel="icon" type="image/x-icon" href="https://www.bing.com/favicon.ico">
+      
+            <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+            <div class="I">
+                  <h2 id="title">The Password Creator</h2>
+                  <div>
+                  <p style="text-align:left;" >This is Your Password : </p><input type="search" id="password" readonly ><br><input  type="button" id='copybtn' value="Copy"> 
+                  </div>
+                  <input id="button" type="button" onclick="createPassword()" value="Create Password !">
+                  <br><p>The Last Created P.W : </p><input type="text" id="p" style="background-color: transparent;border: 0;text-align: center;font-size: medium;"></input><br><br>
+                  <p id='help'>How To Use : <br><span class="space">- Click on the button 'Create Password !' to Create A Secure Password </span><br><span class='space'>- To copy your password Just click it </span> <br><span class='space'>- Repeat the topics to get a new password <br><b><center> Thanks For Use It </center></b></p><input type="button" value=" Help " onclick="help()" id='hidebtn'>
+            </div>
+            <div class="loader">
+                  <div class="loader-bar2"></div>
+                  <div class="loader-bar"></div>
+                  <div class="loader-bar2"></div>
+                  <div class="loader-bar"></div>
+                  <div class="loader-bar2"></div>
+            </div>
+            
+
+      </body>
+      
+      <script src="script.js"></script>
+</html>
